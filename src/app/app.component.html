@@ -21,10 +21,14 @@
 <div>
   <h1>{{ title }}</h1>
   <p>Hola mundo</p>
-  <div *ngIf="message | async as msg">
-    <h2>New Message</h2>
-    <pre>{{ msg | json }}</pre>
-  </div>
+  <p>Realizando un cambio jiji</p>
+  <label> Y donde estan mis cambios?</label>
+  <p> Si tu me quieres</p>
+  <p> Realizando un cambio otra vezjiji</p>
+  <p> Realizando un cambio otra segunda parte vezjiji</p>
+  <h2>New Message</h2>
+  <pre>{{ message | async | json }}</pre>
+  <button>Send Message</button>
 </div>
 
 <router-outlet></router-outlet>
